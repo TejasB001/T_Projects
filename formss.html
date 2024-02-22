@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Hello welcome to college website</h2>
+        <form action="/action_page.php" autocomplete="on" method="get">
+            <label for="college">College</label>
+            <input type="text" id="college" name="college" value="Raisoni" readonly><br><br>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" value="2024-02-24" disabled><br><br>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="stream">Choose your stream:</label>
+            <select id="stream" name="stream">
+                <option value="BCA" selected>BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+            </select><br><br>
+            <label for="birthday">Birth date</label>
+            <input type="date" id="birthday" name="birthday" max="2024-02-24" min="1999-11-23">
+            <h3>Rate your college staff</h3>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+            <input type="radio" id="satisfactory" name="rating" value="satisfactory">
+            <label for="satisfactory">Satisfactory</label><br>
+            <input type="radio" id="Good" name="rating" value="Good">
+            <label for="Good">Good</label><br>
+            <h3>Rate your classrooms</h3>
+            <input type="checkbox" id="Comfortable" name="classroom rating" value="Comfortable space">
+            <label for="Comfortable">Comfortable space</label><br>
+            <input type="checkbox" id="good benches" name="classroom rating" value="good benches">
+            <label for="goodbenches">Good benches</label><br>
+            <input type="checkbox" id="good lights" name="classroom rating" value="good lights">
+            <label for="goodlights">Good lights</label><br><br>
+            <label for="myfile">Upload a photo of your college:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+            <label for="review">Rate your college:</label>
+            <input type="number" id="review" name="review" min="1" max="10">
+            <h3>Add your review</h3>
+            <textarea name="review" rows="2" cols="100"></textarea><br>
+            <input type="reset" value="Reset">
+            <button type="button" onclick="alert('Saved')">Save</button>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
